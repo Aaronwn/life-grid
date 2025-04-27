@@ -1,0 +1,54 @@
+.datetime-display {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, rgba(173, 216, 230, 0.7), rgba(255, 182, 193, 0.7));
+  border-radius: 12px;
+  padding: 12px 18px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  font-family: 'Arial', sans-serif;
+  min-width: 180px;
+}
+
+.datetime-display .day-date {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+.datetime-display .time {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 5px 0;
+  letter-spacing: 2px;
+}
+
+.datetime-display .timezone {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  font-weight: 300;
+}
+
+@media (max-width: 600px) {
+  .datetime-display {
+    padding: 8px 12px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .datetime-display .time {
+    font-size: 2rem;
+  }
+
+  .datetime-display .day-date {
+    font-size: 0.8rem;
+  }
+
+  .datetime-display .timezone {
+    font-size: 0.7rem;
+  }
+}
