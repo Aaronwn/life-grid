@@ -27,13 +27,13 @@
             <div class="input-row">
               <div class="input-field">
                 <label for="currentAge">当前年龄</label>
-                <input type="number" id="currentAge" min="0" step="0.1" placeholder="输入年龄" required />
+                <input type="number" id="currentAge" min="1" step="1" placeholder="输入年龄" required />
               </div>
               <div class="input-field">
                 <label for="lifeExpectancy">期望寿命</label>
                 <input type="number" id="lifeExpectancy" min="1" value="85" placeholder="输入寿命" required />
               </div>
-              <button type="submit" id="generate-btn" class="action-btn">生成网格</button>
+              <button type="submit" id="generate-btn" class="action-btn">查看生命旅程</button>
             </div>
           </section>
 
@@ -45,15 +45,15 @@
             <!-- 当前年剩余统计区域 -->
             <div class="stats-row">
               <div class="stat-item">
-                <span class="stat-label">当前年剩余天数</span>
+                <span class="stat-label">今年剩余天数</span>
                 <div id="days-remaining" class="stat-value"></div>
               </div>
               <div class="stat-item">
-                <span class="stat-label">当前年剩余周数</span>
+                <span class="stat-label">今年剩余周数</span>
                 <div id="weeks-remaining" class="stat-value"></div>
               </div>
               <div class="stat-item">
-                <span class="stat-label">当前年剩余月数</span>
+                <span class="stat-label">今年剩余月数</span>
                 <div id="months-remaining" class="stat-value"></div>
               </div>
             </div>
