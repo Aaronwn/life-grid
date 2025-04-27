@@ -3,6 +3,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const datetimeDisplay = document.createElement('div');
   datetimeDisplay.className = 'datetime-display';
 
+  // 添加样式使其定位在右上角
+  datetimeDisplay.style.position = 'absolute';
+  datetimeDisplay.style.top = '20px';
+  datetimeDisplay.style.right = '20px';
+  datetimeDisplay.style.zIndex = '100';
+
   // 创建内部结构
   datetimeDisplay.innerHTML = `
     <div class="day-date" id="day-date"></div>
